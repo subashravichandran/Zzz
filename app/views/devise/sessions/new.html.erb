@@ -1,0 +1,27 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="wrapper">
+    <div class="text-center mt-4 name">
+      Zzz
+    </div>
+    <div class="form-field d-flex align-items-center">
+      <%= f.email_field :email, autofocus: false, autocomplete: "email", placeholder: "Email" %>
+    </div>
+
+    <div class="form-field d-flex align-items-center">
+      <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
+    </div>
+
+    <% if devise_mapping.rememberable? %>
+      <div class="text-center fs-6">
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me, class: 'label-text' %>
+      </div>
+    <% end %>
+
+    <div class="actions">
+      <%= f.submit "Login", class: "btn mt-3" %>
+    </div>
+    <%= render "devise/shared/links" %>
+  </div>
+<% end %>
+
