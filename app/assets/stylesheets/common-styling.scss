@@ -110,3 +110,23 @@ body {
     padding-left: 10px;
     color: #555;
 }
+
+.nav-bar {
+  margin: 10px 7px 10px 7px;
+  border-radius: 5px;
+  box-shadow: 13px 1px 30px #cbced1, -13px -13px 20px #fff;
+}
+
+.nav-icons {
+  margin: 5px 15px 5px 15px;
+  color: #000;
+}
+
+.app-button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}

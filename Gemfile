@@ -77,3 +77,6 @@ end
 
 # Bootstrap framework
 gem 'bootstrap'
+
+# Icons
+gem "font-awesome-sass", "~> 6.4.0"
