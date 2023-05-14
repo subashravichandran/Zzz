@@ -11,8 +11,11 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% flash.each do |name, msg| %>
+      <div class='popup overlay' style='padding-right: 35px; padding-left: 35px'>
+        <%= content_tag :div, msg, :id => "flash_#{name}",  :class => "alert alert-#{name}" %> 
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
